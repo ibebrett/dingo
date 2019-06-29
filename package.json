@@ -10,5 +10,8 @@
   "devDependencies": {
     "eslint": "^6.0.1",
     "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "dev": "node -r dotenv/config index.js"
   }
 }
