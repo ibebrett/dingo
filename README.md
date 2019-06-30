@@ -4,4 +4,6 @@
 
 D&D App for Slack.
 
+## Deployment
 
+The app requires a single environment variable to be set: `SLACK_BOT_TOKEN`.
