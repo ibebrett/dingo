@@ -14,7 +14,7 @@ const executeCommand = command => {
     return null;
   }
 
-  if (command.name == "rollDice") {
+  if (command.name === "rollDice") {
     const roll = Math.floor(Math.random() * command.sides) + 1;
     return `rolled ${roll}`;
   }

@@ -17,5 +17,5 @@ rtm.on("message", event => {
 
 (async () => {
   // Connect to Slack
-  const { self, team } = await rtm.start();
+  await rtm.start();
 })();
