@@ -1,14 +1,14 @@
 const parseCommand = commandString => {
-  if (commandString.startsWith('roll d')) {
+  if (commandString.startsWith("roll d")) {
     const die = {
       name: "rollDice",
       sides: 0,
       count: 1
     };
-    die.sides = parseInt(commandString.slice('roll d'.length));
+    die.sides = parseInt(commandString.slice("roll d".length));
     if (isNaN(die.sides)) {
       return {
-        name: 'error',
+        name: "error",
         description: 'Must use a number after "roll d" '
       };
     }
@@ -16,7 +16,7 @@ const parseCommand = commandString => {
     return die;
   }
   return null;
-}
+};
 
 const executeCommand = command => {
   if (executeCommand === null) {
@@ -28,7 +28,7 @@ const executeCommand = command => {
     return `rolled ${roll}`;
   }
 
-  if (command.name === 'error') {
+  if (command.name === "error") {
     return command.description;
   }
 };
